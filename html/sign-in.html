@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login-style.css">
+</head>
+
+<body class="background" style="background-image: url('../img/blue background.jpg')">
+
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="listelements left logo">Quiz</li>
+                <a href="sign-in.html">
+                    <li class="listelements right active">Log In</li>
+                </a>
+                <a href="sign-up.html">
+                    <li class="listelements right">Sign Up</li>
+                </a>
+                <a href="contact-us.html">
+                    <li class="listelements right">Contact Us</li>
+                </a>
+                <a href="../index.html">
+                    <li class="listelements right">Home</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+
+        <div>
+            <img class="puzzle" src="../img/puzzle-piece.png">
+        </div>
+        <div class="login">
+            <div id="paragraph">
+                <p>
+                <h1>Hello,</h1>
+                <h1>Welcome back</h1>
+                </p>
+            </div>
+
+            <div id="form">
+                <form id="form1" class="form">
+                    <div class="form-control">
+                        <!------------------------------User name -------------------->
+                        <fieldset id="fieldset1">
+                            <legend>
+                                <h3>username</h3>
+                            </legend>
+                            <input type="text" id="username">
+                            <img src="../icons/correct.svg" alt="" class="correct-icon user-icon hide-icon icon"
+                                id="img1">
+                            <img src="../icons/wrong.svg" alt="" class="wrong-icon user-icon hide-icon icon" id="img2">
+                        </fieldset>
+                        <div id="username-error"></div>
+                    </div>
+                    <br />
+                    <div class="form-control">
+                        <!----------------------------password------------------------->
+                        <fieldset id="fieldset2">
+                            <legend>
+                                <h3>password</h3>
+                            </legend>
+                            <input type="password" id="password">
+                            <img src="../icons/correct.svg" alt="" class="correct-icon password-icon hide-icon icon"
+                                id="img5">
+                            <img src="../icons/wrong.svg" alt="" class="wrong-icon password-icon hide-icon icon"
+                                id="img6">
+                        </fieldset>
+                        <div id="password-error"></div>
+                    </div>
+                    <a href="sign-in.html" id="forget-password">forget password?</a>
+                    <br /><br />
+                    <button type="submit">login</button>
+                    <br />
+                    <div id="account">Don't have an account? <a href="sign-up.html" class="sign">Sign Up</a> now</div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+
+</body>
+
+</html>
